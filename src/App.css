@@ -5,9 +5,18 @@ body {
 
   text-align: center;
 }
-
+.App-post {
+  display: flex;
+  flex-direction: column;
+}
+.App-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 form {
-  margin-top: 100px;
+  width: 400px;
+  margin-top: 50px;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -20,7 +29,11 @@ label {
   margin-bottom: 8px;
   font-weight: bold;
 }
-
+.dashboard {
+  background-color: #45a049;
+  padding: 10px;
+  font-weight: bold;
+}
 input {
   width: 100%;
   padding: 8px;

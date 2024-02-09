@@ -59,66 +59,69 @@ function AdminPost() {
   };
 
   return (
-    <div>
+    <div className="App-post">
       <Navbar />
+      <a className="dashboard" href="https://zakat-ui.vercel.app/">
+        Dasbord Page
+      </a>
+      <div className="App-form">
+        <form>
+          <h1>Tambah Data</h1>
+          <label htmlFor="nama">Nama:</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            value={formData.nama}
+            onChange={handleChange}
+          />
+          <br />
 
-      <form>
-        <h1>Tambah Data</h1>
-        <label htmlFor="nama">Nama:</label>
-        <input
-          type="text"
-          id="nama"
-          name="nama"
-          value={formData.nama}
-          onChange={handleChange}
-        />
-        <br />
+          <label htmlFor="gender">Gender:</label>
+          <input
+            type="text"
+            id="gender"
+            name="gender"
+            value={formData.gender}
+            onChange={handleChange}
+          />
+          <br />
 
-        <label htmlFor="gender">Gender:</label>
-        <input
-          type="text"
-          id="gender"
-          name="gender"
-          value={formData.gender}
-          onChange={handleChange}
-        />
-        <br />
+          <label htmlFor="barang">Barang:</label>
+          <input
+            type="text"
+            id="barang"
+            name="barang"
+            value={formData.barang}
+            onChange={handleChange}
+          />
+          <br />
 
-        <label htmlFor="barang">Barang:</label>
-        <input
-          type="text"
-          id="barang"
-          name="barang"
-          value={formData.barang}
-          onChange={handleChange}
-        />
-        <br />
+          <label htmlFor="uang">Uang:</label>
+          <input
+            type="text"
+            id="uang"
+            name="uang"
+            value={formData.uang}
+            onChange={handleChange}
+          />
+          <br />
 
-        <label htmlFor="uang">Uang:</label>
-        <input
-          type="text"
-          id="uang"
-          name="uang"
-          value={formData.uang}
-          onChange={handleChange}
-        />
-        <br />
+          <label htmlFor="beras">Beras:</label>
+          <input
+            type="text"
+            id="beras"
+            name="beras"
+            value={formData.beras}
+            onChange={handleChange}
+          />
+          <br />
 
-        <label htmlFor="beras">Beras:</label>
-        <input
-          type="text"
-          id="beras"
-          name="beras"
-          value={formData.beras}
-          onChange={handleChange}
-        />
-        <br />
-
-        <button className="btn" type="button" onClick={postData}>
-          Post Item
-        </button>
-      </form>
-
+          <button className="btn" type="button" onClick={postData}>
+            Post Item
+          </button>
+        </form>
+      </div>
       {/* Toast Container for notifications */}
       <ToastContainer />
     </div>
